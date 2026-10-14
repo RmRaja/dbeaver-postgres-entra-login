@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PostgreSQL Microsoft Entra ID Authentication
+Bundle-SymbolicName: io.github.rmraja.dbeaver.entraid;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: rmraja
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.jkiss.dbeaver.model,
+ org.jkiss.dbeaver.ext.postgresql,
+ org.jkiss.dbeaver.ui,
+ org.eclipse.swt,
+ org.eclipse.jface,
+ org.eclipse.equinox.security
+Export-Package: io.github.rmraja.dbeaver.entraid,
+ io.github.rmraja.dbeaver.entraid.oauth,
+ io.github.rmraja.dbeaver.entraid.ui
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Automatic-Module-Name: io.github.rmraja.dbeaver.entraid

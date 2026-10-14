@@ -1,0 +1,19 @@
+# Build output
+build/
+dist/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+out/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
