@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+    <extension point="org.jkiss.dbeaver.dataSourceAuth">
+        <authModel
+            id="postgres_entra_id"
+            label="Microsoft Entra ID (Azure)"
+            description="Sign in with Microsoft Entra ID; an access token is used as the password (Azure Database for PostgreSQL)"
+            class="io.github.rmraja.dbeaver.entraid.EntraIdAuthModel"
+            desktop="true">
+            <datasource id="postgresql"/>
+        </authModel>
+    </extension>
+
+    <extension point="org.jkiss.dbeaver.ui.propertyConfigurator">
+        <propertyConfigurator
+            class="io.github.rmraja.dbeaver.entraid.EntraIdAuthModel"
+            uiClass="io.github.rmraja.dbeaver.entraid.ui.EntraIdAuthConfigurator"/>
+    </extension>
+
+</plugin>
